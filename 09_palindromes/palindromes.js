@@ -1,7 +1,9 @@
 function noPunctuation(string) {
-    string = string.toLowerCase();
-    string = string.split('').filter(char => /[a-zA-Z]/.test(char));
-    return string.join('');
+    return string
+        .toLowerCase()
+        .split('')
+        .filter(char => /[a-zA-Z]/.test(char))
+        .join('');
 }
 
 const palindromes = function(string) {
